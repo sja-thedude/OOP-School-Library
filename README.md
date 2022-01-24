@@ -1,6 +1,6 @@
 # OOP-School-Library
 
->  This project is made as part of Module 4 Week 3. You are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. The app that you will create will allow a you to so.
+> This project is made as part of Module 4 Week 3. You are the librarian of OOP University, and you need a tool to record what books are in the library and who borrows them. The app that you will create will allow a you to so.
 
 ## Built With
 
@@ -8,16 +8,15 @@
 
 ## To get a local copy run the following steps:
 
-- Copy this link [this link](https://github.com/sja-thedude/
-OOP-School-Library)
+- Copy this link [this link](https://github.com/sja-thedude/OOP-School-Library)
 - Open your terminal or command line
-- Run "git clone Paste [this link](https://github.com/sja-hedude/
-OOP-School-Library)"
+- Run "git clone Paste [this link](https://github.com/sja-thedude/OOP-School-Library)"
 - Open the folder with your code editor
 
 ## To get started-:
 
 - Run `bundle install` or `bundle i` to install the dependencies
+- Run `ruby main.rb` to run the School Library App!
 - Run `irb` to run the code by pasting it in the terminal.
 - Run `rubocop` to find and fix linters
 
