@@ -79,7 +79,7 @@ module Persist
     end
     open('rentals.json', 'w') { |f| f << JSON.generate(json) }
   end
-  
+
   def save_books
     json = []
     @books.each do |book|
