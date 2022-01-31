@@ -79,3 +79,18 @@ module Persist
     end
     open('rentals.json', 'w') { |f| f << JSON.generate(json) }
   end
+  
+  def save_books
+    json = []
+    @books.each do |book|
+      json.push({ title: book.title, author: book.author })
+    end
+    open('books.json', 'w') { |f| f << JSON.generate(json) }
+  end
+
+  def persist_data
+    save_people unless @people.empty?
+    save_books unless @books.empty?
+    save_rental unless @rentals.empty?
+  end
+end
