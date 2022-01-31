@@ -4,8 +4,9 @@ class Person
   attr_accessor :name, :age, :parent_permission, :rentals
   attr_reader :id
 
-  def initialize(age:, name: 'Unknown', parent_permission: true)
-    @id = Random.rand(1..1000)
+  def initialize(id:, age:, name: 'Unknown', parent_permission: true)
+    @id = id
+    @id = Random.rand(1..1000) if @id.nil?
     @name = name
     @age = age
     @parent_permission = parent_permission
