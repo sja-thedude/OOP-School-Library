@@ -1,11 +1,10 @@
-=begin
 require_relative '../student'
 require_relative '../classroom'
 require_relative '../person'
 
 describe Student do
   context 'When providing student information' do
-    classroom = Classroom.new('Microverse')
+    classroom = Classroom.new
     person = Student.new(id: nil, classroom: classroom, age: 22, name: 'sss', parent_permission: true)
     person_two = Student.new(id: nil, classroom: classroom, age: 16, name: 'sona', parent_permission: false)
 
@@ -26,4 +25,3 @@ describe Student do
     end
   end
 end
-=end
