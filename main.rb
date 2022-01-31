@@ -1,4 +1,5 @@
 require_relative 'app'
+require 'json'
 
 class Main
   def initialize
@@ -29,7 +30,7 @@ class Main
 
       @app.handle_action option
     end
-
+    @app.persist_data
     puts 'Thank you for using this app!'
   end
 end
